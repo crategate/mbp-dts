@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH="$HOME/.oh-my-zsh"
-
+export PATH="$PATH:/opt/nvim/"
 ZSH_THEME="agnosterzak"
 
 plugins=( 
