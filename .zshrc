@@ -1,8 +1,9 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+# export PATH="$HOME/bin:/usr/local/bin:$PATH"
 
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/opt/nvim/"
+export PATH="$PATH:~/.local/bin/"
 ZSH_THEME="agnosterzak"
 
 plugins=( 
