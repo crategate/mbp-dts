@@ -3,7 +3,7 @@
 #
 drives=$(lsblk --json) &> /dev/null
 
-echo $drives | jq '.[][0]?'
+# echo $drives | jq '.[][0]?'
 
 
 is_rm=$(echo $drives | jq '.[][0].rm?')
@@ -20,8 +20,16 @@ echo $size
 #if [[ $(echo $is_rm) && ( 2 -lt 21 )]]
 if $is_rm 
 then
-    echo "its removable"
-    sudo mount /dev/$sd_name /media/usb
+    echo "its removable, \n proceeding with transfer attempt"
+    mount /dev/$sd_name /media/usb
+    echo "$(date)"
+    mkdir /home/kev/sec/mdata/handshakes/incoming/$(date +%M_%H_%d.%m.%y)
+    cp -a /media/usb/BrucePCAP/handshakes /home/kev/sec/mdata/handshakes/incoming/$(date +%M_%H_%d.%m.%y)
+
+    
+    
+
+    umount /dev/$sd_name 
 else 
-    echo "some other thing"
+    echo "no removable drive detected... </3 "
 fi
