@@ -273,7 +273,7 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
+PATH=$PATH:~/script
 # Display Pokemon-colorscripts
 # Project page: https://gitlab.com/phoneybadger/pokemon-colorscripts#on-other-distros-and-macos
 #pokemon-colorscripts --no-title -s -r #without fastfetch

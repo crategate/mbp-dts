@@ -1,2 +1,5 @@
-sudo airmon-ng stop wlan1
-sudo systemctl start NetworkManager
+ifconfig wlan1 down
+iwconfig wlan1 mode managed
+ifconfig wlan1 up
+service NetworkManager start
+
