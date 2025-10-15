@@ -263,6 +263,8 @@ fi
 export ZSH="$HOME/.oh-my-zsh"
 export PATH="$PATH:/opt/nvim/"
 export PATH="$PATH:~/.local/bin/"
+export PATH="$HOME/script/"
+
 ZSH_THEME="agnosterzak"
 
 plugins=(
