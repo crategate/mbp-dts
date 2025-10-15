@@ -1,3 +1,3 @@
-*/hypr/monitors.conf
-*/hypr/wallpaper_effects/*
-*/hypr/wallust/wallust-hyprland.conf
+.config/hypr/monitors.conf
+.config/hypr/wallpaper_effects/*
+.config/hypr/wallust/wallust-hyprland.conf
